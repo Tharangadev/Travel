@@ -1,0 +1,52 @@
+.single {
+    .breadcrum {
+        margin: 1em 0;
+        background: #eee;
+        ul {
+            padding: 0px;
+            margin: 0px;
+            li {
+                list-style-type: none;
+                float: left;
+                padding: .5em;
+            }
+        }
+        :after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    }
+    .header_gall {
+        text-transform: uppercase;
+    }
+    .image_group {
+        .image-col {
+            padding: 0px;
+            .image_gall {
+                height: 200px;
+                margin: .5em;
+                overflow: hidden;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: inherit;
+                    position: absolute;
+                    cursor:pointer;
+                }
+                .image_dis {
+                	padding:0.5em;
+                	transition:300ms;
+                	cursor:pointer;
+                }
+            }
+            :hover {
+                .image_dis {
+                    position: absolute;
+                    bottom: 0px;
+                    background: rgba(255, 255, 255, 0.88);
+                }
+            }
+        }
+    }
+}
